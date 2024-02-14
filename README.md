@@ -3,9 +3,6 @@ A repository for all things GitHub Copilot Training - Fundamentals 100!
 
 The GitHub Copilot Fundamentals 100 Workshop is designed for developers who want to gain foundational knowledge and practical skills in using GitHub Copilot. 
 
-## Please check out this [lab guide](https://experience.cloudlabs.ai/#/labguidepreview/b24dc63a-29e6-4a26-9f95-4737c8465a34) to follow-along and complete the self-paced labs.
-*_please note that this lab handout focuses on the use of a VM, rather than using a VM, you will be using your own GitHub account, GitHub Copilot license, and IDE as well as this GitHub repository_
-
 ## Syllabus
 
 ### Introduction to GitHub Copilot
@@ -28,3 +25,19 @@ The GitHub Copilot Fundamentals 100 Workshop is designed for developers who want
 - **Understanding when to use Copilot:** Guidelines for determining when GitHub Copilot is most beneficial / appropriate to use during the development process 
 - **Ensuring code quality:** Strategies for maintaining code quality while leveraging GitHub Copilot’s suggestions 
 - **Overview of prompt engineering:** Introduction to prompt engineering techniques to guide GitHub Copilot’s suggestions and improve the relevance / accuracy of generated code 
+
+## This course contains 6 different lab sections all on the basics of how to use GitHub Copilot, lab handouts can be found in the `SelfPacedLabs` directory.
+
+### Lab Topics Are As Follows: 
+
+**Lab 01 -->** Experimenting with JavaScript AI Code Suggestions
+
+**Lab 02 -->** Leverging Multiple Suggestions with GitHub Copilot
+
+**Lab 03 -->** Generating ARM and Terraform code with GitHub Copilot Chat
+
+**Lab 04 -->** Creating Unit Test Functions with GitHub Copilot Chat
+
+**Lab 05 -->** Creating Unit Test Functions with GitHub Copilot Chat
+
+**Lab 06 -->** Generating Documentation With Inline GitHub Copilot
