@@ -36,7 +36,7 @@ The GitHub Copilot Fundamentals 100 Workshop is designed for developers who want
 
 **Lab 03 -->** Generating ARM and Terraform code with GitHub Copilot Chat
 
-**Lab 04 -->** Creating Unit Test Functions with GitHub Copilot Chat
+**Lab 04 -->** Code Refactoring with GitHub Copilot
 
 **Lab 05 -->** Creating Unit Test Functions with GitHub Copilot Chat
 
