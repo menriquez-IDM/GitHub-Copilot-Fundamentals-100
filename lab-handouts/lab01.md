@@ -8,7 +8,7 @@ In this exercise, you will have the opportunity to experiment with and apply Jav
 
 ### Task 1
 
-1. From the VS Code Explorer window, create a new file
+1. From the VS Code Explorer window, create a new file in the `lab-files` directory
 2. Name the file `skills.js` and verify that it is empty
 3. In the `skills.js` file, type the following function declaration. A whole function body will be suggested by GitHub Copilot (shown in gray text). Precise recommendations will vary
 
@@ -79,7 +79,7 @@ git push
 
 ### Task 4: 
 
-1. From the VS Code Explorer, create a **New File**, name your file `index.js` and verify that the file is empty
+1. From the VS Code Explorer, create a **New File**, name your file `index.js` and verify that the file is empty and in your `lab-files` directory
 2. Press `Ctrl + I` to open GitHub Copilot Chat and paste the following comments to create a basic markdown editor
 
 ```
@@ -99,7 +99,7 @@ Create a basic markdown editor in Next.js with the following features:
 4. In the same `index.js` file, enter the following instructions for reversing a sentence
 
 ```
-  take a sentence as input, reverse the input sentence, the start of the sentence must start with a capital. This should be done in javascript
+Create a function that takes a sentence as input, reverse the input sentence, the start of the sentence must start with a capital. This should be done in JavaScript.
 ```
 
 5. The generated outcome should look similar to this: 

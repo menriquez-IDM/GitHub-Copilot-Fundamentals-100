@@ -13,7 +13,7 @@ In this exercise, you will have the opportunity to explore and apply the use of 
  - Search for the **Python** extension in the _Search Extensions in Marketplace_ search box
  - Select **Python** from the list of results that show up and **Install**
 
-2. Create a **New File** named `app.py` and create a new function definition in the file:
+2. Create a **New File** named `app.py` in the `lab-files` directory and create a new function definition in the file:
 
 ```
 def hello():
@@ -28,7 +28,7 @@ def hello():
 
 ### Task 2
 
-1. Create a new file named `prime.py` and type the following code: 
+1. In the same file, type the following code: 
 
 ```
 def prime(n):
@@ -47,10 +47,10 @@ def prime(n):
     #### Using Git Flow
 
     1. At the top of your VS Code window select the **Terminal** tab and click **New Terminal**. This will open a terminal window directly in your VS Code.
-    2. Run the command below to add the `app.py` and `prime.py` files to the GitHub repo
+    2. Run the command below to add the `app.py` files to the GitHub repo
 
     ```
-    git add app.py prime.py
+    git add app.py
     ```
 
     3. Commit the changes to the repo

@@ -13,55 +13,7 @@ In this exercise, you will participate in a learning or practice activity where 
  - Search for the **C#** extension in the _Search Extensions in Marketplace_ search box
  - Select **C#** from the list of results that show up and **Install**
 
-2. Look at this example of poorly written C# code and analyze it. How could this code be improved?
-
-```
-using System;
-
-class Program
-{
-    const int MAX = 100;
-
-     static int Sum(int[] arr, int n)
-     {
-         int result = 0;
-         for (int i = 0; i < n; i++)
-         {
-             result += arr[i];
-         }
-         return result;
-     }
-
-     static void Main()
-     {
-         int n;
-         Console.Write("Enter the number of elements (1-100): ");
-         if (!int.TryParse(Console.ReadLine(), out n) || n < 1 || n > MAX)
-         {
-             Console.WriteLine("Invalid input. Please provide a digit ranging from 1 to 100.");
-             Environment.Exit(1);
-         }
-
-         int[] arr = new int[n];
-
-         Console.WriteLine("Enter " + n + " integers:");
-         for (int i = 0; i < n; i++)
-         {
-             if (!int.TryParse(Console.ReadLine(), out arr[i]))
-             {
-                 Console.WriteLine("Invalid input. Please enter valid integers.");
-                 Environment.Exit(1);
-             }
-         }
-
-         int total = Sum(arr, n);
-
-         Console.WriteLine("Sum of the numbers: " + total);
-
-         // No need to free memory in C#, as it's managed by the runtime.
-     }
- }
-```
+2. Look at the example of poorly written C# code in the `poorly_written.cs` file in the `lab-files` directory and analyze it. How could this code be improved?
 
 Here are a few code-related issues: 
 - The code begins with the inclusion of the System namespace for essential input and output operations.
@@ -79,7 +31,7 @@ Here are a few code-related issues:
 
 1. Open the GitHub Copilot Chat window by clicking the **Chat** extension icon
 
-2. Copy the above code, and paste it into the text area. Type the prompt `Refactor the code` at the end of the code and press enter
+2. Select the code in `poorly_written.cs` and type the prompt `Refactor the selected code`
 
 3. GitHub Copilot chat will give a response that should look similar to the code below: 
 
@@ -146,78 +98,23 @@ class Program
     - Shows the sum on the console.
     - The code includes input validation and provides the sum of user-entered integers.
 
+5. Insert the code into a new file named `well_written.cs` into the `lab-files` directory
+
 ### Task 3
 
-1. Create a new file named `codechat.cs`
+1. Open the file named `codechat.cs`
 
 ***Note:** If you see a recommendation to install the C# extension, click on **Install**
 
-2. Add the below code into `codechat.cs`:
+2. Ask Copilot to use if-else statements instead of the current switch statement. Identify the second of code where the switch is present, and select it
 
-```
-using System;
+3. Right-click on the code window and select **Copilot**, from the presented list of options, select **Start Code Chat**
 
-class Program
-{
-    static void Main()
-    {
-        int health = 100;
-        int score = 0;
+4. Type the prompt `Use if-else statements instead of the switch statement`. Click `>` or press `Enter`
 
-        Console.WriteLine("Welcome to the Adventure Game!");
-        Console.WriteLine("You are in a dark forest.");
+5. Review the response that Copilot provided, click **Accept** or **Discard** based on the code provided
 
-        while (health > 0)
-        {
-            Console.WriteLine("\nOptions:");
-            Console.WriteLine("1. Go deeper into the forest.");
-            Console.WriteLine("2. Rest by the campfire.");
-            Console.WriteLine("3. Quit the game.");
-
-            int choice;
-            Console.Write("Enter your choice: ");
-            if (int.TryParse(Console.ReadLine(), out choice))
-            {
-                switch (choice)
-                {
-                    case 1:
-                        Console.WriteLine("You go farther into the forest and discover a treasure chest!");
-                        score += 10;
-                        break;
-                    case 2:
-                        Console.WriteLine("You rest by the campfire and regain 20 health.");
-                        health += 20;
-                        break;
-                    case 3:
-                        Console.WriteLine($"Thanks for playing! Your score: {score}");
-                        return;
-                    default:
-                        Console.WriteLine("Invalid choice. Try again.");
-                        break;
-                }
-
-                health -= 10;
-                if (health <= 0)
-                {
-                    Console.WriteLine($"Game over. Your score: {score}");
-                }
-            }
-            else
-            {
-                Console.WriteLine("Invalid input. Please enter a valid number.");
-            }
-        }
-    }
-}
-```
-
-4. Ask Copilot to use if-else statements instead of the current switch statement. Identify the second of code where the switch is present, and select it
-
-5. Right-click on the code window and select **Copilot**, from the presented list of options, select **Start Code Chat**
-
-7. Type the prompt `Use if-else statements instead of the switch statement`. Click `>` or press `Enter`
-
-8. Review the response that Copilot provided, click **Accept** or **Discard** based on the code provided
+6. Save the changes made to `codechat.cs`
 
 ### Task 4 
 

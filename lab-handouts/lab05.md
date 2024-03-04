@@ -5,6 +5,7 @@
 ### Task 1
 
 1. Create a new file named `calculator.js`
+
 2. Navigate to GitHub Copilot Chat and give the following prompt:
 
 ```
