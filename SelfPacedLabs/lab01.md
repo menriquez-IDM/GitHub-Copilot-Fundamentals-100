@@ -21,7 +21,7 @@ function calculateNumbers(var1, var2)
 5. In the `skills.js` file, type a comment to describe a function that calculates the price of a vehicle based on its gas mileage, year, and number of miles driven.
 
 ```
-// A function that calculates the price of a vehicle based on gas mileage, year and number of miles driven.
+// Create a function that calculates the price of a vehicle based on gas mileage, year and number of miles driven.
 ```
 
 6. Press 'Tab` to accept the suggestion provided by GitHub Copilot, review and save the file. Recommendations may look similar to the code as follows: 
